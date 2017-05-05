@@ -120,14 +120,12 @@ public class NlpController {
 
 		for (int x = 0; x < inlist.size(); x++) {
 			System.out.println(inlist.get(x));
-			NLPUtil.ner4Sentence(inlist.get(x), null);
 			insb.append(inlist.get(x).replaceAll("-LRB-", "(").replaceAll("-RRB-", ")"));
 			insb.append("\n");
 		}
 
 		for (int y = 0; y < exlist.size(); y++) {
 			System.out.println(exlist.get(y));
-			NLPUtil.ner4Sentence(exlist.get(y), null);
 			exsb.append(exlist.get(y).replaceAll("-LRB-", "(").replaceAll("-RRB-", ")"));
 			exsb.append("\n");
 		}
